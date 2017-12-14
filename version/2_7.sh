@@ -2,7 +2,7 @@
 
 echo "================= Installing Python 2.7.12 ==================="
 sudo apt-get install -y \
-  python2.7=2.7.12-1ubuntu0~16.04.1 \
+  python2.7=2.7.12-1ubuntu0~16.04.2 \
   python-dev=2.7.11-1 \
   python-pip=8.1.1-2ubuntu0.4 \
   python-virtualenv=15.0.1+ds-3ubuntu1
