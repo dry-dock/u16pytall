@@ -2,10 +2,11 @@
 
 echo "================= Installing PYPY2 ==================="
 
+PYPY2_VERSION=v5.10.0
 #install Pypy
-wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy2-v5.8.0-linux64.tar.bz2
-tar -xvf pypy2-v5.8.0-linux64.tar.bz2 -C /opt/
-cp -s /opt/pypy2-v5.8.0-linux64/bin/pypy /usr/bin/pypy
+wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy2-"$PYPY2_VERSION"-linux64.tar.bz2
+tar -xvf pypy2-"$PYPY2_VERSION"-linux64.tar.bz2 -C /opt/
+cp -s /opt/pypy2-"$PYPY2_VERSION"-linux64/bin/pypy /usr/bin/pypy
 mkdir /opt/pypy
 mkdir /opt/pypy/site-packages/
 cd /opt/pypy
@@ -24,4 +25,4 @@ pip install nose mock pytest coverage
 #Default lxml throws error
 #CFLAGS="-O0" #STATIC_DEPS=true pip install lxml #throws error :disappointed:
 deactivate
-echo "================= Successfully Installed PYPY2 ==================="
+echo "================= Successfully Installed PYPY ==================="

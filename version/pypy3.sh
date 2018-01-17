@@ -2,10 +2,11 @@
 
 echo "================= Installing PYPY3 ==================="
 
+PYPY3_VERSION=v5.10.1
 #install Pypy
-wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-v5.8.0-linux64.tar.bz2
-tar -xvf pypy3-v5.8.0-linux64.tar.bz2 -C /opt/
-cp -s /opt/pypy3-v5.8.0-linux64/bin/pypy3 /usr/bin/pypy3
+wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-"$PYPY3_VERSION"-linux64.tar.bz2
+tar -xvf pypy3-"$PYPY3_VERSION"-linux64.tar.bz2 -C /opt/
+cp -s /opt/pypy3-"$PYPY3_VERSION"-linux64/bin/pypy3 /usr/bin/pypy3
 mkdir /opt/pypy3
 mkdir /opt/pypy3/site-packages/
 cd /opt/pypy3
