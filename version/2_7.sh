@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-echo "================= Installing Python 2.7.14 ==================="
+echo "================= Installing Python 2.7.12 ==================="
 sudo apt-get install -y \
   python2.7=2.7.12* \
   python-dev=2.7.12* \
