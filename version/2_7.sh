@@ -2,10 +2,10 @@
 
 echo "================= Installing Python 2.7.14 ==================="
 sudo apt-get install -y \
-  python2.7=2.7.14* \
-  python-dev=2.7.14* \
-  python-pip=9.0.3* \
-  python-virtualenv=15.2.0*
+  python2.7=2.7.12* \
+  python-dev=2.7.12* \
+  python-pip=8.1.2* \
+  python-virtualenv=15.1.0*
 
 # Install virtualenv
 virtualenv -p python $HOME/venv/2.7
