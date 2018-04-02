@@ -13,7 +13,7 @@ python -m pip install pip==9.0.3
 pip install -U pip setuptools
 
 # Installing virtualenv-15.2.0
-wget -nv https://pypi.python.org/packages/b1/72/2d70c5a1de409ceb3a27ff2ec007ecdd5cc52239e7c74990e32af57affe9/virtualenv-15.2.0.tar.gz#md5=b5f6b473140cc627d19d0d203f3b63cc19d0d203f3b63cc6
+wget -nv https://pypi.python.org/packages/b1/72/2d70c5a1de409ceb3a27ff2ec007ecdd5cc52239e7c74990e32af57affe9/virtualenv-15.2.0.tar.gz#md5=b5f6b473140cc627d19d0d203f3b63cc
 tar xvfz virtualenv-15.2.0.tar.gz
 cd virtualenv-15.2.0
 python setup.py install
