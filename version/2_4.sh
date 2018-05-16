@@ -3,7 +3,7 @@
 echo "================= Installing Python 2.4.6 ==================="
 sudo apt-get install -y \
   python2.4=2.4* \
-  python2.4-dev=2.4 \
+  python2.4-dev=2.4* \
   python-pip=8.1.1* \
   python-virtualenv=15.0.1+ds*
 
