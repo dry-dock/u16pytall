@@ -6,7 +6,7 @@ sudo apt-get install -y \
   python3.1-dev=3.1*
 
 # Install virtualenv
-virtualenv -p python $HOME/venv/3.1
+virtualenv -p python3.1 $HOME/venv/3.1
 
 # Install pip packages
 . $HOME/venv/3.1/bin/activate
