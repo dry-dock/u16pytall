@@ -2,7 +2,7 @@
 
 echo "================= Installing PYPY2 ==================="
 
-PYPY2_VERSION=v5.10.0
+PYPY2_VERSION=v6.0.0
 #install Pypy
 wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy2-"$PYPY2_VERSION"-linux64.tar.bz2
 tar -xvf pypy2-"$PYPY2_VERSION"-linux64.tar.bz2 -C /opt/
