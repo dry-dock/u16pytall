@@ -12,7 +12,7 @@ python -m pip install pip==8.1.2
 
 pip install setuptools
 
-# Installing virtualenv-15.1.0
+# Installing virtualenv-16.0.0
 pip install -q virtualenv==16.0.0
 
 #!/bin/bash
