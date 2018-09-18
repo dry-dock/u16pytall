@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-export PYTHON2_VERSION=2.7.14*
+export PYTHON_VERSION=2.7.14*
 echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
 python2.7="$PYTHON_VERSION" \
