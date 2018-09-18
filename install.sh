@@ -9,12 +9,16 @@ apt-get install -y libxml2 libxml2-dev libxslt1.1 libxslt1-dev libffi-dev libssl
 # Installing pip-9.0.1
 wget -nv https://bootstrap.pypa.io/3.2/get-pip.py
 python get-pip.py
-python -m pip install pip==18.0
+
+export PYTHON_PIP_VERSION=18.0
+echo "============= Installing pip "$PYTHON_PIP_VERSION" ======================"
+python -m pip install pip="$PYTHON_PIP_VERSION" \
 
 pip install setuptools
 
-# Installing virtualenv-16.0.0
-pip install -q virtualenv==16.0.0
+export VIRTUALENV_VERSION=16.0.0
+echo "================= Adding $VIRTUALENV_VERSION ==================="
+sudo pip install virtualenv=="$VIRTUALENV_VERSION"
 
 #!/bin/bash
 for file in /u16pytall/version/*;
