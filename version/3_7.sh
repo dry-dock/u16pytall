@@ -1,10 +1,12 @@
 #!/bin/bash -e
 
-export PYTHON_VERSION=3.7*
+export PYTHONPKG=3.7*
+export PYTHONDEVPKG=3.7*
+
 echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
-python3.7="$PYTHON_VERSION" \
-python3.7-dev="$PYTHON_VERSION"
+python3.7="$PYTHONPKG" \
+python3.7-dev="PYTHONDEVPKG"
 
 # Install virtualenv
 virtualenv -p python3.7 $HOME/venv/3.7
