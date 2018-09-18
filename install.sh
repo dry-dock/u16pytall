@@ -13,6 +13,10 @@ python -m pip install pip==8.1.2
 
 pip install setuptools
 
+export VIRTUALENV_VERSION=16.0.0
+echo "================= Adding $VIRTUALENV_VERSION ==================="
+sudo pip install virtualenv=="$VIRTUALENV_VERSION"
+
 # Installing virtualenv-16.0.0
 pip install -q virtualenv==16.0.0
 
