@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-export PYTHON3_VERSION=3.7*
+export PYTHON_VERSION=3.7*
 echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
 python3.7="$PYTHON_VERSION" \
