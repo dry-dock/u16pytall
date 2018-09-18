@@ -1,9 +1,10 @@
 #!/bin/bash -e
 
-echo "================= Installing Python 3.7.0 ==================="
+export PYTHON3_VERSION=3.7*
+echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
-  python3.7=3.7* \
-  python3.7-dev=3.7*
+python3.7="$PYTHON_VERSION" \
+python3.7-dev="$PYTHON_VERSION"
 
 # Install virtualenv
 virtualenv -p python3.7 $HOME/venv/3.7
@@ -12,5 +13,5 @@ virtualenv -p python3.7 $HOME/venv/3.7
 . $HOME/venv/3.7/bin/activate
 pip install nose mock pytest coverage
 deactivate
-echo "================= Successfully Installed Python 3.7.0 ==================="
+echo "================= Successfully Installed Python  ==================="
 
