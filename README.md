@@ -3,7 +3,7 @@ Docker image with ubuntu 16.04 + python + all services &amp; tools
 
 **Available python versions**:
 
-1. 2.7.15
+1. 2.7.14
 2. 3.7.0
 3. pypy2 v6.0.0
 4. pypy3 v6.0.0
