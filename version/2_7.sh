@@ -9,6 +9,10 @@ python-dev="$PYTHON_VERSION" \
 export PYTHON_PIP_VERSION=8.1.1*
 echo "============= Installing pip "$PYTHON_PIP_VERSION" ======================"
 sudo apt-get install -y python-pip="$PYTHON_PIP_VERSION" \
+
+export PYTHON_VIRTUALENV=16.0.0
+echo "============= Installing virtualenv "$PYTHON_VIRTUALENV" ================="
+python-virtualenv="$PYTHON_VIRTUALENV"
  
 # Install virtualenv
 virtualenv -p python $HOME/venv/2.7
