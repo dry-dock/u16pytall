@@ -1,11 +1,18 @@
 #!/bin/bash -e
 
-echo "================= Installing Python 2.7.14 ==================="
+export PYTHON_VERSION=2.7.14*
+echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
-  python2.7=2.7.14* \
-  python-dev=2.7.14* \
-  python-pip=8.1.1* \
-  python-virtualenv=15.0.1+ds*
+python2.7="$PYTHON_VERSION" \
+python-dev="$PYTHON_VERSION" \
+
+export PYTHON_PIP_VERSION=8.1.1*
+echo "============= Installing pip "$PYTHON_PIP_VERSION" ======================"
+sudo apt-get install -y python-pip="$PYTHON_PIP_VERSION" \
+ 
+export PYTHON_VIRTUALENV=15.0.1+ds*
+echo "============= Installing virtualenv "$PYTHON_VIRTUALENV" ================="
+python-virtualenv="$PYTHON_VIRTUALENV"
 
 # Install virtualenv
 virtualenv -p python $HOME/venv/2.7
