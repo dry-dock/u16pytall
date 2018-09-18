@@ -15,6 +15,7 @@ echo "============= Installing virtualenv "$PYTHON_VIRTUALENV" =================
 sudo apt-get install -y python-virtualenv="$PYTHON_VIRTUALENV"
  
 # Install virtualenv
+echo $HOME
 virtualenv -p python $HOME/venv/2.7
 
 # Install pip packages
