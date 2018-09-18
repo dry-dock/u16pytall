@@ -1,6 +1,6 @@
 #!/bin/bash -e
 
-export PYTHON_VERSION=2.7.14*
+export PYTHON2_VERSION=2.7.14*
 echo "================= Installing Python "$PYTHON_VERSION" ==================="
 sudo apt-get install -y \
 python2.7="$PYTHON_VERSION" \
@@ -23,4 +23,4 @@ pip install pyopenssl ndg-httpsclient pyasn1
 pip install nose mock pytest coverage
 CFLAGS="-O0" pip install lxml
 deactivate
-echo "================= Successfully Installed Python 2.7.14 ==================="
+echo "================= Successfully Installed Python ==================="
