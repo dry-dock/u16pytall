@@ -8,5 +8,8 @@ Docker image with ubuntu 16.04 + python + all services &amp; tools
 3. pypy2 v6.0.0
 4. pypy3 v6.0.0
 
+u16pytall Docker Hub repo: [drydock/u16pytall](https://hub.docker.com/r/drydock/u16pytall/)
+  
 **Services:**
-Use https://github.com/dry-dock/u16all for reference of all services supported.
+
+Please refer [u16all](https://github.com/dry-dock/u16all) for a list of supported services
