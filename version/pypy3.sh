@@ -2,7 +2,7 @@
 
 echo "================= Installing PYPY3 ==================="
 
-PYPY3_VERSION=v6.0.0
+PYPY3_VERSION=v7.0.0
 #install Pypy
 wget -nv https://bitbucket.org/pypy/pypy/downloads/pypy3-"$PYPY3_VERSION"-linux64.tar.bz2
 tar -xvf pypy3-"$PYPY3_VERSION"-linux64.tar.bz2 -C /opt/
