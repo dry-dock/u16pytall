@@ -1,7 +1,7 @@
 #!/bin/bash -e
 
-export PYTHONPKG=2.7.14*
-export PYTHONDEVPKG=2.7.14*
+export PYTHONPKG=2.7*
+export PYTHONDEVPKG=2.7*
 export PYTHONPIPPKG=8.1.1*
 export PYTHONVIRTUALENV=15.0.1+ds*
 
